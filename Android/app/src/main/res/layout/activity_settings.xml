@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txtSettingsVersionName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="version number"
+            android:textColor="?attr/textColor"
+            android:textAlignment="center" />
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_login"
+            android:id="@+id/switch2"
+            android:textColor="?attr/metaTextColor"
+            android:checked="false" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkBackground"
+            android:padding="10dp" />
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/manual_gps"
+            android:id="@+id/switch3"
+            android:textColor="?attr/metaTextColor"
+            android:checked="false" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkBackground"
+            android:padding="10dp" />
+
+        <Switch
+            android:id="@+id/switchHideRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textColor="?attr/metaTextColor"
+            android:text="@string/hideRefresh" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkBackground"
+            android:padding="10dp" />
+
+        <Switch
+            android:id="@+id/switchLockSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textColor="?attr/metaTextColor"
+            android:text="@string/lockSettings" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkBackground"
+            android:padding="10dp" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textColor="?attr/metaTextColor"
+            android:text="@string/notifications" />
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/darkBackground"
+                android:padding="10dp" />
+
+        <Switch
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/webview_refresh"
+                android:id="@+id/switch4"
+            android:textColor="?attr/metaTextColor"
+                android:checked="false" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkBackground"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rotateImage"
+                    android:layout_weight="1"/>
+
+                <Spinner
+                    android:id="@+id/spinner_degrees"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkBackground"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal" >
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/max_length"
+            android:id="@+id/textView5"
+            android:textColor="?attr/metaTextColor"
+            android:layout_gravity="center_horizontal" />
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numberPicker1"
+            android:textColor="?attr/metaTextColor"
+            android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
+

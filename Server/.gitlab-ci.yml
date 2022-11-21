@@ -1,0 +1,50 @@
+image: gitlab.auxiliumgroup.com:4567/devops/docker/dockerbase_ci:master
+
+stages:
+  - build
+  - containerize
+  - deploy
+  
+build:
+  stage: build
+  image: node:12
+  tags:
+    - docker
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - dist
+      - node_modules
+  script:
+    - npm install
+    - ls -la
+  only:
+    - master
+    
+containerize:
+  stage: containerize
+  only:
+   - master
+  script:
+   - ls -la
+   - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN ${CI_REGISTRY}
+   - docker build -t ${CI_REGISTRY}/${CI_PROJECT_PATH}:${CI_COMMIT_REF_NAME} .
+   - docker push ${CI_REGISTRY}/${CI_PROJECT_PATH}:${CI_COMMIT_REF_NAME}
+   
+deploy-to-montreal-live:
+    stage: deploy
+    variables:
+        DOCKER_HOST: ssh://manager.swarm.montreal.auxilium.world
+        GITLAB_CONTAINER_IMAGE: ${CI_REGISTRY}/${CI_PROJECT_PATH}:${CI_COMMIT_REF_NAME}
+        SWARM_PORT: 9397
+    script:
+      - docker login -u swarm -p hKpGnz_mr2MJK71SQpQx $CI_REGISTRY
+      - docker stack deploy --with-registry-auth --compose-file=stack.yml ${CI_PROJECT_NAME}-${CI_BUILD_REF_NAME}
+    environment:
+      name: master
+    only:
+      - master
+    tags:
+      - docker
+
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mnu_app_webview"
+            android:icon="@drawable/ic_apps_black_24dp"
+            android:title="@string/application" />
+            <item
+                android:id="@+id/mnu_app_voicechat"
+                android:icon="@drawable/ic_chat_black_24dp"
+                android:title="@string/voicechat" />
+<!--        <item-->
+<!--            android:id="@+id/mnu_app_messenger"-->
+<!--            android:icon="@drawable/ic_chat_black_24dp"-->
+<!--            android:title="@string/messenger" />-->
+<!--        <item-->
+<!--            android:id="@+id/mnu_app_callhistory"-->
+<!--            android:icon="@drawable/ic_history"-->
+<!--            android:visible="false"-->
+<!--            android:title="@string/call_management" />-->
+    </group>
+    <item android:title="@string/gps0"
+          android:id="@+id/mnu_app_gps">
+        <menu>
+            <item
+                    android:id="@+id/fifteen"
+                    android:icon="@drawable/ic_time"
+                    android:title="@string/gps1" />
+            <item
+                    android:id="@+id/thirty"
+                    android:icon="@drawable/ic_time"
+                    android:title="@string/gps2" />
+            <item
+                    android:id="@+id/hour"
+                    android:icon="@drawable/ic_time"
+                    android:title="@string/gps3" />
+            <item
+                    android:id="@+id/indef"
+                    android:icon="@drawable/ic_infinity"
+                    android:title="@string/indefinitly" />
+        </menu>
+    </item>
+    <item android:title="@string/settings">
+        <menu>
+            <item
+                android:id="@+id/mnu_app_about"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="@string/about" />
+            <item
+                android:id="@+id/mnu_app_settings"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/settings" />
+            <item
+                android:id="@+id/mnu_logout"
+                android:icon="@drawable/ic_exit"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+</menu>

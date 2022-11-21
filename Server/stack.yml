@@ -1,0 +1,21 @@
+version: '3.5'
+
+services:
+
+  node-server:
+    image: ${GITLAB_CONTAINER_IMAGE}
+    ports:
+      - "${SWARM_PORT-9397}:3000"
+    volumes:
+      - /etc/localtime:/etc/localtime
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+      update_config:
+        parallelism: 1
+        delay: 15s
+      resources:
+        limits:
+          cpus: '1'
+          memory: 500M

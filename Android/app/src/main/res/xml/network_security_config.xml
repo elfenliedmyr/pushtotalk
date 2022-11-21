@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">butternut</domain>
+        <domain includeSubdomains="true">datalynk</domain>
+        <domain includeSubdomains="true">api</domain>
+        <domain includeSubdomains="true">www.auxiliumgroup.com</domain>
+        <domain includeSubdomains="true">auxiliumgroup.com</domain>
+        <domain includeSubdomains="true">lynk.com</domain>
+        <domain includeSubdomains="true">andremourinho.com</domain>
+        <domain includeSubdomains="true">butternut.hopto.org</domain>
+    </domain-config>
+</network-security-config>

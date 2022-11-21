@@ -1,0 +1,104 @@
+<resources>
+    <!--suppress CheckTagEmptyBody -->
+<!--    <string name="datalynk">.datalynk/api/dispatch.php</string>-->
+<!--    <string name="url_override">http://tarmac.datalynk:4200</string>-->
+    <string name="datalynk">.auxiliumgroup.com/api/dispatch.php</string>
+    <string name="url_override"></string>
+
+    <string name="all_contacts">All Contacts</string>
+    <string name="app_name">Auxilium Mobile</string>
+    <string name="app_title">Mobile</string>
+    <string name="auto_login">Auto Login</string>
+    <string name="barcode_cash">Cash</string>
+    <string name="barcode_coin">Coin</string>
+    <string name="barcode_details">Please enter the $ amount for this transaction.</string>
+    <string name="barcode_scanconfirm">Please confirm the barcode is scanned correctly.</string>
+    <string name="barcode_other">Other</string>
+    <string name="call_management">Call Management</string>
+    <string name="confirm">Confirm</string>
+    <string name="connect">Connect</string>
+    <string name="connected">Connected</string>
+    <string name="connecting">Connecting...</string>
+    <string name="dialog_call_history">Please enter any notes regarding this call or press okay to submit without notes.</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="finished">Finished</string>
+    <string name="gps_permision">Insufficent Permission</string>
+    <string name="gps0">GPS Tracking</string>
+    <string name="gps1">15 Minutes</string>
+    <string name="gps2">30 Minutes</string>
+    <string name="gps3">60 Minutes</string>
+    <string name="indefinitly">Indefinitly</string>
+    <string name="leave">Leave</string>
+    <string name="leaveRoom">Leave Room</string>
+    <string name="login_user">Email or Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_client">Client Name</string>
+    <string name="login_client_assist">.auxiliumgroup.com</string>
+    <string name="login_submit">Login</string>
+    <string name="logout">Logout</string>
+    <string name="manual_gps">Show GPS options in Menu</string>
+    <string name="monitor_call_history">Monitor Call History</string>
+    <string name="max_length">Maximum allowed tracking time if enabled (Minutes)</string>
+    <string name="not_connected">Not Connected</string>
+    <string name="notes">Notes</string>
+    <string name="ok">Ok</string>
+    <string name="ok_done">Ok and Done</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="refresh">Refresh</string>
+    <string name="remove">Remove</string>
+    <string name="rescan">Rescan</string>
+    <string name="room_contacts">Room Contacts</string>
+    <string name="room1">Room 1</string>
+    <string name="room2">Room 2</string>
+    <string name="rotateImage">Rotate Camera Images (Degrees)</string>
+    <string name="scan">Scan Barcode</string>
+    <string name="send_barcode">Send</string>
+    <string name="settings">Settings</string>
+    <string name="settings_dialog_toggle">Automatic Tracking</string>
+    <string name="settings_dialog_length">Automatic Tracking Length (Minutes)</string>
+    <string name="settings_dialog_save">Save</string>
+    <string name="settings_dialog_cancel">Cancel</string>
+    <string name="slice_contact">Contact App #</string>
+    <string name="slice_contact_text">Contact application requires the following fields: email, phone and name.</string>
+    <string name="slice_history">History App #</string>
+    <string name="slice_history_text">History application requires the following fields: contactOfRef, notes, date, and duration.</string>
+    <string name="sync_contacts">Sync Contacts</string>
+    <string name="syncing">Syncing...</string>
+    <string name="try_again">Try Again</string>
+    <string name="tracking_snackbar">Tracking: %1$d:%2$02d</string>
+    <string name="webview_refresh">Refresh view on resume</string>
+
+    <string name="picture">Take Picture</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+
+    <string name="open_auxilium">Open Auxilium</string>
+    <string name="request_location_updates">Request location updates</string>
+    <string name="remove_location_updates">Remove location updates</string>
+    <string name="location_updated">Location Updated: %1$s</string>
+    <string name="permission_rationale">This app collects location data to enable your employer to monitor your position or to calculate the best route using our mapping algorithms even when the app is closed or not in use.</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core functionality</string>
+    <string name="notification_sound">Notification Sound</string>
+
+    <string name="notifications">Notifications</string>
+    <string name="hideRefresh">Hide Refresh</string>
+    <string name="hideLogout">Hide Logout</string>
+    <string name="lockSettings">Lock Settings</string>
+
+    <string name="application">App Portal</string>
+    <string name="about">About</string>
+    <string name="voicechat">Voice Chat</string>
+    <string name="messenger">Messenger</string>
+    <string name="message_contacts">Contacts</string>
+    <string name="message_chats">Chats</string>
+
+
+    <string-array name="degrees">
+        <item>0</item>
+        <item>90</item>
+        <item>180</item>
+        <item>270</item>
+    </string-array>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/control_background"
+    android:orientation="vertical">
+    <com.google.android.material.tabs.TabLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.tabs.TabItem
+            android:text="@string/message_contacts"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <com.google.android.material.tabs.TabItem
+            android:text="@string/message_chats"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent">
+    </androidx.viewpager.widget.ViewPager>
+</LinearLayout>
